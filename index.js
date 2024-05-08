@@ -1,4 +1,5 @@
 const express = require("express");
+const dotenv = require('dotenv');
 
 // JSON Data Import
 const {users} = require("./data/users.json")
@@ -7,7 +8,14 @@ const {users} = require("./data/users.json")
 const usersRouter = require("./routes/users");
 const booksRouter = require("./routes/books");
 
+// Database Connection
+const DbConnection = require("./databaseConnection");
+
+dotenv.config();
+
 const app = express();
+
+DbConnection();
 
 const PORT = 8081;
 
