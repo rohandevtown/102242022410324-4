@@ -49,4 +49,4 @@ GET: Get all issued books with the fine
 
     >> npm run dev
 
-mongodb+srv://rohankinnal:WfrwGw2DBq1d26oJ@cluster0.hoh14f8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+MVC >> M: Model (Schema, the structure of our mongodb collection) >> V: View (Frontend part) >> C: Controller (Brain or logic of a route)
